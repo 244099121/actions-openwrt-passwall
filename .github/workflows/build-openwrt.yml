@@ -22,8 +22,8 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt/tree/rebase-19.07-5.4
-  REPO_BRANCH: dev-lean-lede
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: rebase-19.07-5.4
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
@@ -38,7 +38,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/fyglinfo@master
+      uses: actions/checkout@master
 
     - name: Initialization environment
       env:

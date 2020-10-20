@@ -45,6 +45,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-dblatex_9.0.0~rc2-1_all.deb
+        sudo -F apt install -f 
         sudo dpkg -i asciidoc-dblatex_9.0.0~rc2-1_all.deb
         sudo dpkg --print-foreign-architectures
         sudo -E apt-get update

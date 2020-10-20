@@ -55,9 +55,11 @@ jobs:
         sudo -E apt-get install opensp
         wget http://ftp.br.debian.org/debian/pool/main/d/docbook-utils/docbook-utils_0.6.14-3.3_all.deb
         sudo dpkg -i docbook-utils_0.6.14-3.3_all.deb
+        sudo -E apt-get install asciidoc-common
+        sudo -E apt-get install libxml2-utils
+        sudo -E apt-get install xsltproc
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-base_9.0.0~rc2-1_all.deb
         sudo dpkg -i asciidoc-base_9.0.0~rc2-1_all.deb
-        sudo -E apt-get install -f
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-dblatex_9.0.0~rc2-1_all.deb
         sudo dpkg -i asciidoc-dblatex_9.0.0~rc2-1_all.deb
         sudo -E apt-get install build-essential binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler

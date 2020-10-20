@@ -44,11 +44,11 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-dblatex_9.0.0~rc2-1_all.deb
-        sudo -E apt install -f 
         sudo dpkg -i asciidoc-dblatex_9.0.0~rc2-1_all.deb
         sudo dpkg --print-foreign-architectures
         sudo -E apt-get update
+        sudo -E apt-get asciidoc-base dblatex docbook-utils
+        wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-dblatex_9.0.0~rc2-1_all.deb
         sudo -E apt-get install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
 

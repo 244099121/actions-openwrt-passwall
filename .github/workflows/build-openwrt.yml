@@ -57,7 +57,7 @@ jobs:
         sudo dpkg -i docbook-utils_0.6.14-3.3_all.deb
         sudo -E apt-get install libxml2-utils
         sudo -E apt-get install xsltproc
-        http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-common_9.0.0~rc2-1_all.deb
+        wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-common_9.0.0~rc2-1_all.deb
         sudo dpkg -i asciidoc-common_9.0.0~rc2-1_all.deb
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-base_9.0.0~rc2-1_all.deb
         sudo dpkg -i asciidoc-base_9.0.0~rc2-1_all.deb

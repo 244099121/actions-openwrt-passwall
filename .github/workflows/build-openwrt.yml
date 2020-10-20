@@ -48,13 +48,13 @@ jobs:
         sudo -E apt-get update
         wget http://ftp.br.debian.org/debian/pool/main/d/docbook-utils/docbook-utils_0.6.14-3.3_all.deb
         sudo dpkg -i docbook-utils_0.6.14-3.3_all.deb
-        sudo -E apt-get install -f
+        sudo -E apt-get install docbook-dsssl jadetex lynx links2 w3m sgmlspl opensp
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-base_9.0.0~rc2-1_all.deb
         sudo dpkg -i asciidoc-base_9.0.0~rc2-1_all.deb
         sudo -E apt-get install -f
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-dblatex_9.0.0~rc2-1_all.deb
         sudo dpkg -i asciidoc-dblatex_9.0.0~rc2-1_all.deb
-        sudo -E apt-get install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler
+        sudo -E apt-get install build-essential binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
 
     - name: Free up disk space

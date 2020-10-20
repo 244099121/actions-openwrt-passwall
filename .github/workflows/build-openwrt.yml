@@ -67,7 +67,7 @@ jobs:
         sudo -E apt-get install docbook-xsl
         wget http://ftp.us.debian.org/debian/pool/main/x/xmlto/xmlto_0.0.28-2.1_amd64.deb
         sudo dpkg -i xmlto_0.0.28-2.1_amd64.deb
-        wgegt http://ftp.us.debian.org/debian/pool/main/t/texinfo/install-info_5.2.0.dfsg.1-6_amd64.deb
+        wget http://ftp.us.debian.org/debian/pool/main/t/texinfo/install-info_5.2.0.dfsg.1-6_amd64.deb
         sudo dpkg -i install-info_5.2.0.dfsg.1-6_amd64.deb
         sudo -E apt-get install build-essential binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler
         curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc

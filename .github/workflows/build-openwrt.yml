@@ -46,7 +46,13 @@ jobs:
       run: |
         sudo dpkg --print-foreign-architectures
         sudo -E apt-get update
-        sudo -E apt-get install docbook-dsssl jadetex lynx links2 w3m sgmlspl opensp
+        sudo -E apt-get install docbook-dsssl
+        sudo -E apt-get install jadetex 
+        sudo -E apt-get install lynx
+        sudo -E apt-get install links2 
+        sudo -E apt-get install w3m
+        sudo -E apt-get install sgmlspl
+        sudo -E apt-get install opensp
         wget http://ftp.br.debian.org/debian/pool/main/d/docbook-utils/docbook-utils_0.6.14-3.3_all.deb
         sudo dpkg -i docbook-utils_0.6.14-3.3_all.deb
         wget http://ftp.cn.debian.org/debian/pool/main/a/asciidoc/asciidoc-base_9.0.0~rc2-1_all.deb

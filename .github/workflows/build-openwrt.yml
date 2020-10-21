@@ -85,8 +85,8 @@ jobs:
         sudo -E apt-get install autoconf
         sudo -E apt-get install automake
         sudo -E apt-get install libtool
-        curl -fsSL https://raw.githubusercontent.com/P3TERX/dotfiles/master/.bashrc >> ~/.bashrc
-
+        sudo -E apt-get install autopoint
+        curl -fsSL https://github.com/P3TERX/dotfiles/blob/master/.zshrc >> ~/.zshrc 
     - name: Free up disk space
       if: env.FREE_UP_DISK == 'true'
       env:

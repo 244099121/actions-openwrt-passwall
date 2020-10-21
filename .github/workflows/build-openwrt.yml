@@ -70,7 +70,7 @@ jobs:
         wget http://ftp.us.debian.org/debian/pool/main/t/texinfo/install-info_5.2.0.dfsg.1-6_amd64.deb
         sudo dpkg -i install-info_5.2.0.dfsg.1-6_amd64.deb
         wget http://ftp.us.debian.org/debian/pool/main/d/device-tree-compiler/libfdt1_1.6.0-1_amd64.deb
-        sudo -E apt-get libfdt1_1.6.0-1_amd64.deb
+        sudo dpkg -i libfdt1_1.6.0-1_amd64.deb
         wget http://ftp.br.debian.org/debian/pool/main/d/device-tree-compiler/libfdt-dev_1.6.0-1_amd64.deb
         sudo dpkg -i libfdt-dev_1.6.0-1_amd64.deb
         wget http://kr.archive.ubuntu.com/ubuntu/pool/main/d/device-tree-compiler/device-tree-compiler_1.5.1-1_amd64.deb

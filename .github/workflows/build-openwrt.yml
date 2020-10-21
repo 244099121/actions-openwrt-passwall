@@ -46,6 +46,7 @@ jobs:
       run: |
         sudo dpkg --print-foreign-architectures
         sudo -E apt-get update
+        sudo -E apt-get upgrade
         sudo -E apt-get install docbook-dsssl
         sudo -E apt-get install jadetex 
         sudo -E apt-get install lynx

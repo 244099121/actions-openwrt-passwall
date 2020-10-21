@@ -94,7 +94,6 @@ jobs:
         sudo rm -rf /usr/share/dotnet
         docker rmi `docker images -q`
         sudo -E apt-get  purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
-        sudo -E apt-get  autoremove --purge
         sudo -E apt-get  clean
 
     - name: Clone source code

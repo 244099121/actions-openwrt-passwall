@@ -75,6 +75,8 @@ jobs:
         sudo dpkg -i libfdt-dev_1.6.0-1_amd64.deb
         wget http://kr.archive.ubuntu.com/ubuntu/pool/main/d/device-tree-compiler/device-tree-compiler_1.5.1-1_amd64.deb
         sudo dpkg -i device-tree-compiler_1.5.1-1_amd64.deb
+        wget http://ftp.sjtu.edu.cn/ubuntu/pool/main/m/man-db/man-db_2.8.3-2ubuntu0.1_amd64.deb
+        sudo dpkg -i man-db_2.8.3-2ubuntu0.1_amd64.deb
         sudo -E apt-get install build-essential binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto 
         sudo -E apt-get install qemu-utils 
         sudo -E apt-get install upx 
